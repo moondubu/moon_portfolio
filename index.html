@@ -647,15 +647,20 @@
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/scrollTrigger.js"></script>
     <script>
-        var swiper = new Swiper('.swiper-container', {
-            direction: 'horizontal',
-            loop: true,
-            mousewheel: true,
-            pagination: {
-                el: '.swiper-pagination',
-                clickable: true,
+    let swiper = new Swiper('.swiper-container', {
+        direction: 'horizontal',
+        loop: true,
+        mousewheel: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+            renderBullet: function(swiper, current, total) {
+                let paginationHTML = '<div class="swiper-pagination">';
+                paginationHTML += '<span></span>';
+                return paginationHTML;
             },
-        });
+        },
+    });
     </script>
 </body>
 </html>

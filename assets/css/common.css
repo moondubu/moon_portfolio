@@ -663,3 +663,32 @@ body {
 #project06 {
     background: url("../image/bg_thelend.webp") no-repeat center/cover;
 }
+
+.section_04 .swiper-pagination {
+    padding: 20px;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    background: #FFFFFF19;
+    border:1px solid #FFF;
+    gap: 20px;
+    display: inline-flex;
+    justify-content: center;
+    width: auto!important;
+    height:100px;
+    align-items: end;
+    bottom: 65px!important;
+    left: 50%!important;
+    transform: translateX(-50%);
+}
+.section_04 .swiper-pagination-bullet {
+    width: 60px;
+    height: 60px;
+    transition: all 0.3s ease;
+    margin: 0!important;
+}
+.section_04 .swiper-pagination-bullet-active {
+    height: 200px;
+    width: 165px;
+    border-radius: 20px;
+    background: #FFF;
+}
