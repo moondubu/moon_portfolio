@@ -1,0 +1,14 @@
+<svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_4296_1924" fill="white">
+<rect x="10" y="7" width="30" height="36" rx="1"/>
+</mask>
+<rect x="10" y="7" width="30" height="36" rx="1" stroke="white" stroke-width="3" mask="url(#path-1-inside-1_4296_1924)"/>
+<ellipse cx="16.25" cy="15.2498" rx="1.25" ry="1.25" fill="white"/>
+<ellipse cx="16.25" cy="21.75" rx="1.25" ry="1.25" fill="white"/>
+<ellipse cx="16.25" cy="28.25" rx="1.25" ry="1.25" fill="white"/>
+<ellipse cx="16.25" cy="34.75" rx="1.25" ry="1.25" fill="white"/>
+<line x1="20.75" y1="15.25" x2="34.25" y2="15.25" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="20.75" y1="21.75" x2="34.25" y2="21.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="20.75" y1="28.25" x2="34.25" y2="28.25" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="20.75" y1="34.75" x2="34.25" y2="34.75" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+</svg>
