@@ -58,9 +58,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
             }
         }
     });
-
-
-    const wrapper = document.querySelector(".section_04");
-    const colors = ["#f38630","#6fb936", "#ccc", "#6fb936"];
-    const boxes = gsap.utils.toArray(".project_slide_box");
 });

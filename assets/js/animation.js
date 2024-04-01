@@ -4,6 +4,11 @@ const aura = document.querySelector('.aura');
 const auraEllipse = aura.querySelectorAll('ellipse');
 const header = document.querySelector('.header');
 const aboutLogo = document.querySelector('.about_logo');
+const contactLayer = document.querySelector('.contact_layer');
+const contactBtn = document.querySelector('.contact_btn');
+const closeBtn = document.querySelector('.close_btn');
+const iconBtns = document.querySelectorAll('.hover_btn');
+const iconBoxes = document.querySelectorAll('.icon_set_box');
 
 
 moon.addEventListener('mousemove', (e) => {
@@ -62,24 +67,24 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// let removedClass = false;
-// moreBtn.addEventListener('click',() => {
-//     let experienceList = document.querySelectorAll('.experience_wrap li');
-//     let len = experienceList.length;
-//     const numToRemove = 4;
-//
-//     if (removedClass) {
-//         for (let i = 0; i < len; i++) {
-//             experienceList[i].classList.add('active');
-//         }
-//         removedClass = false;
-//     } else if (len > numToRemove) {
-//         for (let i = len - numToRemove; i < len; i++) {
-//             experienceList[i].classList.remove('active');
-//         }
-//         removedClass = true;
-//     }
-//     console.log(removedClass)
-// });
-//
 
+contactBtn.addEventListener('click',() => {
+    contactLayer.style.bottom = '0';
+    document.body.style.overflow ='hidden';
+})
+closeBtn.addEventListener('click',() => {
+    contactLayer.style.bottom = '-100dvh';
+    document.body.style.overflow ='auto';
+})
+
+iconBtns.forEach((btn, index) => {
+    const iconBox = iconBoxes[index]; // 현재 버튼에 해당하는 상자 선택
+
+    btn.addEventListener('mouseover', () => {
+        iconBox.style.display = 'grid'; // 해당 상자를 보이도록 설정
+    });
+
+    btn.addEventListener('mouseout', () => {
+        iconBox.style.display = 'none'; // 해당 상자를 숨기도록 설정
+    });
+});
