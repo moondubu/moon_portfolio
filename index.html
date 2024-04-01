@@ -24,8 +24,7 @@
     <meta name="theme-color" content="#FFB800">
     <link rel="stylesheet" type="text/css" href="assets/css/fonts/suitevariable.css">
     <link rel="stylesheet" type="text/css" href="assets/css/common.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class="wrap">
@@ -615,25 +614,28 @@
                     <h2 class="section_tit">PROJECT.</h2>
                 </div>
             </div>
-            <div class="section section_04" id="section04">
-                <div class="project_slide_box" id="project01">
-                    <div class="inner"></div>
+            <div class="section section_04 swiper-container" id="section04">
+                <div class="swiper-wrapper">
+                    <div class="project_slide_box swiper-slide" id="project01">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="project_slide_box swiper-slide" id="project02">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="project_slide_box swiper-slide" id="project03">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="project_slide_box swiper-slide" id="project04">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="project_slide_box swiper-slide" id="project05">
+                        <div class="inner"></div>
+                    </div>
+                    <div class="project_slide_box swiper-slide" id="project06">
+                        <div class="inner"></div>
+                    </div>
                 </div>
-                <div class="project_slide_box" id="project02">
-                    <div class="inner"></div>
-                </div>
-                <div class="project_slide_box" id="project03">
-                    <div class="inner"></div>
-                </div>
-                <div class="project_slide_box" id="project04">
-                    <div class="inner"></div>
-                </div>
-                <div class="project_slide_box" id="project05">
-                    <div class="inner"></div>
-                </div>
-                <div class="project_slide_box" id="project06">
-                    <div class="inner"></div>
-                </div>
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </div>
@@ -641,8 +643,19 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.1/dist/ScrollToPlugin.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="assets/js/animation.js"></script>
     <script src="assets/js/scrollTrigger.js"></script>
-
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            direction: 'horizontal',
+            loop: true,
+            mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 </html>
