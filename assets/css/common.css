@@ -30,6 +30,11 @@ input[type='number']::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
+button:hover {
+    background: var(--ci_yl)!important;
+    color: var(--ci_pp)!important;
+    border-color: var(--ci_yl)!important;
+}
 em {
     font-style: normal;
 }
@@ -54,7 +59,61 @@ body::-webkit-scrollbar-thumb {
     border:4px solid transparent;
     background-clip: content-box;
 }
-
+.cursor {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    background: #FFFFFF;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    pointer-events: none;
+    transition: transform 0.2s ease;
+}
+.cursor.drag,
+.cursor.click,
+.cursor.reflash{
+    transform: translate(30px, 30px) scale(2);
+}
+.cursor.click:after,
+.cursor.drag.click:after{
+    content: 'Click';
+    color: var(--ci_pp);
+    font-size: 8px;
+    font-family: var(--suit);
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.cursor.drag:after {
+    content: 'Drag';
+    color: var(--ci_pp);
+    font-size: 8px;
+    font-family: var(--suit);
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+.cursor.reflash:after {
+    content: 'Reflash';
+    color: var(--ci_pp);
+    font-size: 8px;
+    font-family: var(--suit);
+    font-weight: 700;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
 .wrap {
     width: 100%;
     overflow-x: hidden;
@@ -155,7 +214,23 @@ body::-webkit-scrollbar-thumb {
     font-weight: 500;
     line-height: 2;
     color: #FFF;
+    position: relative;
 }
+.nav ul li a:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: var(--ci_yl);
+    position: absolute;
+    bottom:-8px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.2s ease;
+}
+.nav ul li a:hover:after {
+    width: 45px;
+}
+
 .container .section {
     width: 100%;
 }
@@ -588,6 +663,7 @@ body::-webkit-scrollbar-thumb {
     opacity: 1;
 }
 .more_btn {
+    display: block;
     width: 260px;
     height: 86px;
     border: 1px solid #FFF;
@@ -598,6 +674,7 @@ body::-webkit-scrollbar-thumb {
     border-radius: 12px;
     margin: 120px auto 0;
     cursor: pointer;
+    background: transparent;
     transition: all 0.3s ease;
 }
 .more_btn.disabled {
@@ -621,6 +698,7 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
     height: 100%;
     width: 100%;
+    cursor: pointer;
 }
 #project01 {
     background: url("../image/bg_bilrigo.webp") no-repeat center/cover;
@@ -666,6 +744,12 @@ body::-webkit-scrollbar-thumb {
     background: transparent;
     overflow: hidden;
     outline: none;
+}
+.section_04 .swiper-pagination-bullet:hover {
+    transform: translateY(-12px);
+}
+.section_04 .swiper-pagination-bullet.swiper-pagination-bullet-active:hover {
+    transform: translateY(0);
 }
 .pg_img_box img {
     width: 60px;
@@ -817,6 +901,7 @@ body::-webkit-scrollbar-thumb {
     font-weight: 100;
     background: transparent;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 .link_btn {
     width: 180px;
@@ -824,16 +909,18 @@ body::-webkit-scrollbar-thumb {
     background: transparent;
     border-radius: 4px;
     border: 1px solid #FFF;
-}
-.link_btn a {
-    display: block;
-    width: 100%;
-    height: 100%;
     line-height: 50px;
     text-align: center;
     font-size: 20px;
     font-weight: 100;
+    transition: all 0.3s ease;
 }
+.link_btn:hover {
+    border-color: var(--ci_yl);
+    background: var(--ci_yl);
+    color: var(--ci_pp);
+}
+
 .project_logo_box {
     margin-bottom: 40px;
 }
@@ -929,7 +1016,7 @@ body::-webkit-scrollbar-thumb {
     position: fixed;
     bottom: -100dvh;
     z-index: 1000;
-    transition: all 0.25s ease-in;
+    transition: all 0.5s ease;
     overflow: hidden;
     text-align: center;
 }
@@ -1013,4 +1100,11 @@ body::-webkit-scrollbar-thumb {
 .close_btn:hover span {
     color: #000;
     font-weight: 800;
+}
+
+.copyright {
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    width: 100%;
 }

@@ -9,7 +9,10 @@ const contactBtn = document.querySelector('.contact_btn');
 const closeBtn = document.querySelector('.close_btn');
 const iconBtns = document.querySelectorAll('.hover_btn');
 const iconBoxes = document.querySelectorAll('.icon_set_box');
-
+const cursor = document.querySelector('.cursor');
+const click = document.querySelectorAll('a, .nav li, .link_btn, .more_btn, .moon, .contact_btn, .close_btn, .swiper-pagination, .kakao, .instagram, .sms');
+const drag = document.querySelectorAll('.section_04');
+const reflash = document.querySelectorAll('.logo');
 
 moon.addEventListener('mousemove', (e) => {
     let x = e.offsetX
@@ -88,3 +91,48 @@ iconBtns.forEach((btn, index) => {
         iconBox.style.display = 'none'; // 해당 상자를 숨기도록 설정
     });
 });
+
+
+
+window.addEventListener('mousemove', (e) => {
+    cursor.style.left = e.pageX + 'px';
+    cursor.style.top = e.pageY + 'px';
+    cursor.setAttribute('data-fromTop', (cursor.offsetTop - scrollY))
+});
+window.addEventListener('scroll',() => {
+    const fromTop = parseInt(cursor.getAttribute('data-fromTop'));
+    cursor.style.top = scrollY + fromTop + 'px';
+});
+
+click.forEach(click => {
+    click.addEventListener('mouseover', function (){
+        cursor.classList.add('click');
+    });
+    click.addEventListener('mouseout', function (){
+        cursor.classList.remove('click');
+    });
+});
+
+drag.forEach(drag => {
+    drag.addEventListener('mouseover', function (){
+        cursor.classList.add('drag');
+    });
+    drag.addEventListener('mouseout', function (){
+        cursor.classList.remove('drag');
+    });
+});
+reflash.forEach(reflash => {
+    reflash.addEventListener('mouseover', function (){
+        cursor.classList.add('reflash');
+    });
+    reflash.addEventListener('mouseout', function (){
+        cursor.classList.remove('reflash');
+    });
+});
+window.addEventListener('mouseleave', (e) => {
+    cursor.style.display = 'none';
+});
+window.addEventListener('mouseenter', (e) => {
+    cursor.style.display = 'block';
+});
+
