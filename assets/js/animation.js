@@ -129,10 +129,10 @@ reflash.forEach(reflash => {
         cursor.classList.remove('reflash');
     });
 });
-window.addEventListener('mouseleave', (e) => {
+document.addEventListener('mouseleave', () => {
     cursor.style.display = 'none';
 });
-window.addEventListener('mouseenter', (e) => {
+document.addEventListener('mouseenter', () => {
     cursor.style.display = 'block';
 });
 
