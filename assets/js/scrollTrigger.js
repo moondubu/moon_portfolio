@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", (event) => {
-    const section2Height = document.querySelector('.section_02').offsetHeight;
     gsap.registerPlugin(ScrollTrigger);
 
     gsap.timeline({
@@ -18,9 +17,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
     });
     ScrollTrigger.create({
         trigger:'.section_02',
-        start:'top tpp',
+        start:'top top',
         pin:true,
-        pinSpacing:false
+        pinSpacing:false,
     });
 
     const moreBtn = document.querySelector('.more_btn');
