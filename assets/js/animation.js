@@ -22,10 +22,10 @@ window.addEventListener('load', function () {
     setTimeout(function () {
         loading.style.top = '-100vh';
         html.style.overflow = 'auto';
-    }, 2000);
+    }, 1000);
     setTimeout(function () {
         loading.style.display = 'none';
-    }, 3500);
+    }, 2500);
 })
 
 moon.addEventListener('mousemove', (e) => {

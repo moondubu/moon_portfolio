@@ -1,4 +1,5 @@
 window.onload = function() {    gsap.registerPlugin(ScrollTrigger);
+    window.scrollTo(0, 0); // 페이지 로드 후 스크롤을 페이지 상단으로 이동
 
     gsap.timeline({
         scrollTrigger:{
