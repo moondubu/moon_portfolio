@@ -13,6 +13,20 @@ const cursor = document.querySelector('.cursor');
 const click = document.querySelectorAll('a, .nav li, .link_btn, .more_btn, .moon, .contact_btn, .close_btn, .swiper-pagination, .kakao, .instagram, .sms');
 const drag = document.querySelectorAll('.section_04');
 const reflash = document.querySelectorAll('.logo');
+const loading = document.querySelector('.loading');
+const html = document.querySelector('html');
+
+
+html.style.overflow = 'hidden'; //로딩 중 스크롤 방지
+window.addEventListener('load', function () {
+    setTimeout(function () {
+        loading.style.top = '-100vh';
+        html.style.overflow = 'auto';
+    }, 2000);
+    setTimeout(function () {
+        loading.style.display = 'none';
+    }, 3500);
+})
 
 moon.addEventListener('mousemove', (e) => {
     let x = e.offsetX
