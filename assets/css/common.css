@@ -877,22 +877,22 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
 }
 #project01 {
-    background: url("../image/bg_bilrigo.webp") no-repeat center/cover;
+    background: url("../image/bg_bilrigo.webp") no-repeat center/100% 100%;
 }
 #project02 {
-    background: url("../image/bg_partner.webp") no-repeat center/cover;
+    background: url("../image/bg_partner.webp") no-repeat center/100% 100%;
 }
 #project03 {
-    background: url("../image/bg_thecheat.webp") no-repeat center/cover;
+    background: url("../image/bg_thecheat.webp") no-repeat center/100% 100%;
 }
 #project04 {
-    background: url("../image/bg_tanghulu.webp") no-repeat center/cover;
+    background: url("../image/bg_tanghulu.webp") no-repeat center/100% 100%;
 }
 #project05 {
-    background: url("../image/bg_biz.webp") no-repeat center/cover;
+    background: url("../image/bg_biz.webp") no-repeat center/100% 100%;
 }
 #project06 {
-    background: url("../image/bg_thelend.webp") no-repeat center/cover;
+    background: url("../image/bg_thelend.webp") no-repeat center/100% 100%;
 }
 
 .section_04 .swiper-pagination {

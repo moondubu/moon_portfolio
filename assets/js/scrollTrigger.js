@@ -4,7 +4,7 @@ window.onload = function() {    gsap.registerPlugin(ScrollTrigger);
         scrollTrigger:{
             trigger:'.section_02',
             start:'10% 80%',
-            end:'100% 100%',
+            end:'80% 80%',
             scrub:1
         }
     })
