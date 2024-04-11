@@ -19,15 +19,15 @@ const html = document.querySelector('html');
 
 html.style.overflow = 'hidden'; //로딩 중 스크롤 방지
 window.addEventListener('load', function () {
-    window.scrollTo(0, 0); // 페이지 로드 후 스크롤을 페이지 상단으로 이동
-
     setTimeout(function () {
         loading.style.top = '-100vh';
         html.style.overflow = 'auto';
+        window.scrollTo(0, 0);
     }, 1000);
     setTimeout(function () {
         loading.style.display = 'none';
     }, 2500);
+
 })
 
 moon.addEventListener('mousemove', (e) => {
