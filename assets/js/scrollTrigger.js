@@ -1,5 +1,4 @@
-document.addEventListener("DOMContentLoaded", (event) => {
-    gsap.registerPlugin(ScrollTrigger);
+window.onload = function() {    gsap.registerPlugin(ScrollTrigger);
 
     gsap.timeline({
         scrollTrigger:{
@@ -57,4 +56,4 @@ document.addEventListener("DOMContentLoaded", (event) => {
             }
         }
     });
-});
+};
