@@ -18,14 +18,18 @@ const html = document.querySelector('html');
 
 
 html.style.overflow = 'hidden'; //로딩 중 스크롤 방지
+document.documentElement.style.scrollBehavior = 'auto';
+document.body.style.scrollBehavior = 'auto';
 window.addEventListener('load', function () {
     setTimeout(function () {
         loading.style.top = '-100vh';
-        html.style.overflow = 'auto';
         window.scrollTo(0, 0);
     }, 1000);
     setTimeout(function () {
+        html.style.overflow = 'auto';
         loading.style.display = 'none';
+        document.documentElement.style.scrollBehavior = 'smooth';
+        document.body.style.scrollBehavior = 'smooth';
     }, 2500);
 
 })
@@ -74,8 +78,6 @@ auraEllipse.forEach((ellipse) => {
 
 window.addEventListener('scroll', () => {
     const scrollPosition = window.scrollY;
-    let viewportHeight = window.innerHeight;
-
     if(scrollPosition > 1900){
         header.classList.add("blur");
     } else {
