@@ -1,0 +1,127 @@
+@media screen and (max-width:1480px) {
+    /*** 공통 ***/
+    .header {
+        height: 80px;
+    }
+    .logo {
+        width: 80px;
+    }
+    .header .inner,
+    .container .section .inner,
+    .footer .inner {
+        width: calc(100% - 80px);
+        margin: 0 40px;
+    }
+    .nav ul li a {
+        font-size: 16px;
+    }
+    .nav ul li a:hover:after {
+        width: 25px;
+    }
+    .section_tit {
+        font-size: 60px;
+    }
+    /*** 공통 ***/
+
+    /*** section_01 ***/
+    .moving_star {
+        max-width: 100%;
+        left: 0;
+    }
+    .moving_star svg {
+        width: 100%;
+        height: 100%;
+    }
+    .comet_02 {
+        bottom: 150px;
+        right: 170px;
+    }
+    .moon_box {
+        width: 30%;
+        height: 30vw;
+        top: 25%;
+        left: 35%;
+    }
+    .moon_box .moon{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .moon_box .aura {
+        width: 180%;
+        height: 180%;
+        top: -40%;
+        left: -40%;
+    }
+    .main_text_box {
+        width: 210px;
+        height: 152px;
+        top: calc(50% - 76px);
+        left: calc(50% - 120px);
+    }
+    .main_text_box .main_text_01 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .main_text_box .main_text_02 {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 20px;
+    }
+    /*** section_01 ***/
+
+    /*** section_02 ***/
+    .logo_box {
+        flex: 0 0 auto;
+        width: calc(50% - 40px);
+        height: calc(50vw - 80px);
+        border-radius: 40px;
+        margin-left: 0;
+        padding-top: 80px;
+        gap: 60px;
+    }
+    .container .section_02 .inner {
+        gap: 40px;
+    }
+    .logo_box .about_logo {
+        width: 80%;
+    }
+    .logo_box .about_logo svg {
+        width: 100%;
+        height: auto;
+    }
+    .logo_box .skill_ps {
+        height: 40px;
+    }
+    .logo_box .skill_ps div {
+        width: 40px;
+    }
+    .about_text_box {
+        gap: 40px;
+    }
+    .about_text_box p {
+        font-size: 16px;
+    }
+    .enter {
+        display: none;
+    }
+    /*** section_02 ***/
+
+    /*** section_03 ***/
+    .work_list {
+        gap: 80px;
+    }
+    .work_list > li {
+        width: calc(50% - 80px);
+    }
+    .work_list li ul li {
+        font-size: 14px;
+    }
+    .work_list li ul li span {
+        display: block;
+        margin-top: 8px;
+    }
+    /*** section_03 ***/
+
+}

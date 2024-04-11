@@ -15,11 +15,10 @@ const drag = document.querySelectorAll('.section_04');
 const reflash = document.querySelectorAll('.logo');
 const loading = document.querySelector('.loading');
 const html = document.querySelector('html');
+const mainTxtBox = document.querySelector('.main_text_box');
 
 
 html.style.overflow = 'hidden'; //로딩 중 스크롤 방지
-document.documentElement.style.scrollBehavior = 'auto';
-document.body.style.scrollBehavior = 'auto';
 window.addEventListener('load', function () {
     setTimeout(function () {
         loading.style.top = '-100vh';
@@ -30,6 +29,7 @@ window.addEventListener('load', function () {
         loading.style.display = 'none';
         document.documentElement.style.scrollBehavior = 'smooth';
         document.body.style.scrollBehavior = 'smooth';
+        mainTxtBox.classList.add("show");
     }, 2500);
 
 })

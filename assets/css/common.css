@@ -11,7 +11,6 @@ a { text-decoration: none; color: inherit; }
 html, body {
     font-family: 'SUITE Variable','SUIT Variable', sans-serif;
     width: 100%;
-    scroll-behavior: smooth;
 }
 img { max-width: 100%; border: 0; }
 table {border-collapse: collapse;}
@@ -556,10 +555,12 @@ body::-webkit-scrollbar-thumb {
     z-index: 2;
     top: 245px;
     left: 140px;
-    animation: fadeInUp 1s ease-out forwards;
     opacity: 0;
     animation-delay: .5s;
     pointer-events: none;
+}
+.main_text_box.show {
+    animation: fadeInUp 1s ease-out forwards;
 }
 .main_text_box .main_text_01 {
     color: rgba(255, 255, 255, 0.50);
