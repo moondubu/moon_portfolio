@@ -21,7 +21,6 @@ window.addEventListener('load', function () {
             pin:true,
             pinSpacing:false,
         });
-
         const moreBtn = document.querySelector('.more_btn');
         moreBtn.addEventListener('click',() => {
             if (!moreBtn.classList.contains('disabled')) {
