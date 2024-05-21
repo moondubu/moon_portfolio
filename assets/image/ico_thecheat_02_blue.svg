@@ -1,0 +1,17 @@
+<svg width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_4579_6514" fill="white">
+<rect x="13.5093" y="34.9971" width="11.2" height="26.6" rx="1"/>
+</mask>
+<rect x="13.5093" y="34.9971" width="11.2" height="26.6" rx="1" stroke="#49C3FF" stroke-width="5" stroke-linecap="round" mask="url(#path-1-inside-1_4579_6514)"/>
+<mask id="path-2-inside-2_4579_6514" fill="white">
+<rect x="30.3091" y="16.7969" width="11.2" height="44.8" rx="1"/>
+</mask>
+<rect x="30.3091" y="16.7969" width="11.2" height="44.8" rx="1" stroke="#49C3FF" stroke-width="5" stroke-linecap="round" mask="url(#path-2-inside-2_4579_6514)"/>
+<mask id="path-3-inside-3_4579_6514" fill="white">
+<rect x="47.1091" y="23.7969" width="11.2" height="37.8" rx="1"/>
+</mask>
+<rect x="47.1091" y="23.7969" width="11.2" height="37.8" rx="1" stroke="#49C3FF" stroke-width="5" stroke-linecap="round" mask="url(#path-3-inside-3_4579_6514)"/>
+<circle cx="19.6094" cy="29.2471" r="2.25" fill="#49C3FF"/>
+<circle cx="36.4092" cy="11.0469" r="2.25" fill="#49C3FF"/>
+<circle cx="53.209" cy="18.0469" r="2.25" fill="#49C3FF"/>
+</svg>

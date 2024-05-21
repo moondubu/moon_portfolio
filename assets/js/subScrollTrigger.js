@@ -1,29 +1,23 @@
 window.addEventListener('load', function () {
     setTimeout(function () {
         gsap.registerPlugin(ScrollTrigger);
-        gsap.timeline({
-            scrollTrigger:{
-                trigger:'.sub_draft',
-                start:'10% 80%',
-                end:'60% 80%',
-                scrub:2,
-            }
-        })
-        .from('.draft_01',{
-            y:'300',
-            duration:1,
-            opacity:0,
-        })
-        .from('.draft_02',{
-            y:'300',
-            duration:1,
-            opacity:0,
-        })
-        .from('.draft_03',{
-            y:'300',
-            duration:1,
-            opacity:0,
-        })
+
+        let drafts = gsap.utils.toArray(".sub_draft .sub_cont")
+        drafts.forEach((draft, i) => {
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: draft,
+                    start:'20% 90%',
+                    end:'60% 90%',
+                    scrub:1,
+                }
+            })
+            .from(draft, {
+                y:150,
+                duration:1,
+                opacity:0,
+            })
+        });
         gsap.timeline({
             scrollTrigger:{
                 trigger:'.sub_footer',

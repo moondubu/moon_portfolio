@@ -1,7 +1,7 @@
 const cursor = document.querySelector('.cursor');
 const click = document.querySelectorAll('button, .sub_nav div');
 const revert = document.querySelectorAll('.sub_overview, .sub_draft');
-
+const colorList =document.querySelectorAll('.sub_color li');
 window.addEventListener('mousemove', (e) => {
     cursor.style.left = e.pageX + 'px';
     cursor.style.top = e.pageY + 'px';
@@ -33,4 +33,9 @@ document.addEventListener('mouseleave', () => {
 });
 document.addEventListener('mouseenter', () => {
     cursor.style.display = 'block';
+});
+
+colorList.forEach((item)=>{
+    item.style.backgroundColor = item.dataset.value
+    item.innerHTML = item.dataset.value
 });

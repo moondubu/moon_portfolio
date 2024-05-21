@@ -900,7 +900,7 @@ body::-webkit-scrollbar-thumb {
     background: url("../image/bg_biz.webp") no-repeat center/100% 100%;
 }
 #project06 {
-    background: url("../image/bg_thelend.webp") no-repeat center/100% 100%;
+    background: url("../image/bg_theland.webp") no-repeat center/100% 100%;
 }
 
 .section_04 .swiper-pagination {
@@ -1023,6 +1023,7 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     gap: 12px;
     margin-bottom: 40px;
+    justify-content: center;
 }
 .use_skill_list span {
     display: inline-block;
@@ -1298,7 +1299,7 @@ body::-webkit-scrollbar-thumb {
 .wrap.bilrigo,
 .wrap.partner,
 .wrap.thecheat,
-.wrap.tanghuru,
+.wrap.tanghulu,
 .wrap.biz,
 .wrap.theland{
     overflow: visible;
@@ -1314,6 +1315,22 @@ body::-webkit-scrollbar-thumb {
 .bilrigo .sub_main {
     background-image: url("../image/bg_bilrigo.webp");
 }
+.partner .sub_main {
+    background-image: url("../image/bg_partner.webp");
+}
+.thecheat .sub_main {
+    background-image: url("../image/bg_thecheat.webp");
+}
+.tanghulu .sub_main {
+    background-image: url("../image/bg_tanghulu.webp");
+}
+.biz .sub_main {
+    background-image: url("../image/bg_biz.webp");
+}
+.theland .sub_main {
+    background-image: url("../image/bg_theland.webp");
+}
+
 @keyframes zoomIn {
     0% {
         background-size: 100%;
@@ -1337,11 +1354,27 @@ body::-webkit-scrollbar-thumb {
 }
 .intro_logo_box {
     overflow: hidden;
-    height: 139px;
 }
 .intro_logo_box img {
-    width: 362px;
     animation: slideUp1 1.5s ease-out forwards;
+}
+.bilrigo .intro_logo_box {
+    height: 139px;
+}
+.bilrigo .intro_logo_box img {
+    width: 362px;
+}
+.partner .intro_logo_box {
+    height: 66px;
+}
+.partner .intro_logo_box img {
+    width: 528px;
+}
+.thecheat .intro_logo_box {
+    height: 134px;
+}
+.thecheat .intro_logo_box img {
+    width: 656px;
 }
 .intro_name_box {
     height: 30px;
@@ -1480,20 +1513,66 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     gap: 40px;
 }
-.sub_cont ul li {
+.partner .icon ul {
+    gap: 80px;
+    max-width: 560px;
+    flex-wrap: wrap;
+}
+.partner .sub_color {
+    width: 100%;
+}
+.sub_color h3 {
+    width: 1400px;
+    margin: 0 auto;
+}
+.sub_color ul {
+    max-width: 100%;
+    gap: 0;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    margin-top: 40px;
+}
+.sub_color ul li {
+    flex: 0 1 auto;
+    width: 100%;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    color: #FFF;
+    font-variant-numeric: lining-nums tabular-nums;
+    font-family: var(--suit);
+    font-size: 24px;
+}
+.sub_color ul li:nth-of-type(n+7) {
+    color: #000;
+    font-weight: 500;
+}
+.partner .icon ul li {
+    width: 80px;
+}
+.thecheat .icon {
+    width: 100%;
+}
+.thecheat .icon ul {
+    width: 100%;
+    justify-content: space-between;
+    gap: normal;
+}
+.icon ul li {
     cursor: pointer;
 }
-.sub_cont ul li:hover {
+.icon ul li:hover {
     -webkit-animation: jello-horizontal 0.9s both;
     animation: jello-horizontal 0.9s both;
 }
-.sub_cont ul li:nth-of-type(4):hover {
-    -webkit-animation: jello-diagonal-1 0.9s both;
-    animation: jello-diagonal-1 0.9s both;
-}
-.sub_cont ul li:nth-of-type(14):hover {
+.bilrigo .icon ul li:nth-of-type(4):hover,
+.partner .icon ul li:nth-of-type(6):hover {
     -webkit-animation: jello-diagonal-2 0.9s both;
     animation: jello-diagonal-2 0.9s both;
+}
+.bilrigo .icon ul li:nth-of-type(14):hover {
+    -webkit-animation: jello-diagonal-1 0.9s both;
+    animation: jello-diagonal-1 0.9s both;
 }
 .sub_cont p{
     font-family: var(--suit);
@@ -1502,7 +1581,15 @@ body::-webkit-scrollbar-thumb {
 }
 .sub_overview .sub_cont p {
     color: #333;
+}
+.bilrigo .sub_overview .sub_cont p {
     max-width: 740px;
+}
+.thecheat .sub_overview .inner {
+    gap: 180px;
+}
+.thecheat .sub_overview .sub_cont p {
+    max-width: 800px;
 }
 .sub_cont span {
     font-weight: 700;
@@ -1549,10 +1636,24 @@ body::-webkit-scrollbar-thumb {
 }
 .sub_system {
     background: #000;
+    position: relative;
 }
 .section.sub.sub_system .inner {
     flex-direction: column;
     gap: 80px;
+}
+.partner .section.sub.sub_system .inner,
+.thecheat .section.sub.sub_system .inner{
+    flex-direction: row;
+    gap: 120px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.sub_logo {
+    max-width: 640px;
+}
+.sub_logo p span {
+    color: #FFF;
 }
 .sub_system p {
     margin-top: 32px;
@@ -1563,13 +1664,21 @@ body::-webkit-scrollbar-thumb {
 }
 .sub.sub_draft .inner {
     display: block;
-    position: relative;
-    height: 1876px;
+    overflow: hidden;
 }
 .sub.sub_draft .sub_cont {
-    display: inline-block;
-    position: absolute;
+    float: left;
 }
+.sub.sub_draft .sub_cont:nth-of-type(2),
+.sub.sub_draft .sub_cont:nth-of-type(3),
+.sub.sub_draft .sub_cont:nth-of-type(5){
+    float: right;
+}
+.sub.sub_draft .inner:after {
+    clear: both;
+    content: '';
+}
+
 .sub.sub_draft .sub_cont img {
     webkit-user-select: none;
     -khtml-user-select: none;
@@ -1582,21 +1691,24 @@ body::-webkit-scrollbar-thumb {
     -o-user-drag: none;
     user-drag: none;
 }
-.draft_01 {
-    top: 120px;
-    left: 0;
+.bilrigo .draft_02 {
+    margin-top: -733px;
 }
-.draft_02 {
-    top: 220px;
-    right: 0;
+.bilrigo .draft_02 h3 {
+    margin-left: 48%;
 }
-.draft_02 h3 {
-    width: 360px;
-    margin-left: 345px;
+.partner .draft_02,
+.partner .draft_05{
+    margin-top: -600px;
 }
-.draft_03 {
-    bottom: 120px;
-    left: 0;
+.partner .draft_03 {
+    margin-top: 120px;
+}
+.partner .draft_02 h3 {
+    margin-left: 58%;
+}
+.thecheat .draft_02 h3 {
+    margin-left: 67%;
 }
 .sub_footer {
     text-align: center;
