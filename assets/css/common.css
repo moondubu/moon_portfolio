@@ -94,7 +94,7 @@ body::-webkit-scrollbar-thumb {
     transform: translate(-50%, -50%);
 }
 .cursor.drag:after {
-    content: 'Drag';
+    content: '< Drag >';
     color: var(--ci_pp);
     font-size: 8px;
     font-family: var(--suit);
@@ -1023,7 +1023,6 @@ body::-webkit-scrollbar-thumb {
     display: flex;
     gap: 12px;
     margin-bottom: 40px;
-    justify-content: center;
 }
 .use_skill_list span {
     display: inline-block;
@@ -1418,6 +1417,7 @@ body::-webkit-scrollbar-thumb {
     animation: slideUp 0.5s ease-out forwards;
     animation-delay: 2s;
     transform: translateY(100%);
+    justify-content: center;
 }
 @keyframes slideUp {
     0% {
