@@ -96,7 +96,7 @@ body::-webkit-scrollbar-thumb {
 .cursor.drag:after {
     content: '< Drag >';
     color: var(--ci_pp);
-    font-size: 8px;
+    font-size: 7px;
     font-family: var(--suit);
     font-weight: 700;
     position: absolute;
