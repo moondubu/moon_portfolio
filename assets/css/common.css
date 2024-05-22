@@ -930,7 +930,7 @@ body::-webkit-scrollbar-thumb {
     outline: none;
 }
 .section_04 .swiper-pagination-bullet:hover {
-    transform: translateY(-12px);
+    transform: scale(1.2);
 }
 .section_04 .swiper-pagination-bullet.swiper-pagination-bullet-active:hover {
     transform: translateY(0);
