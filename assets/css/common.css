@@ -1356,7 +1356,9 @@ body::-webkit-scrollbar-thumb {
     overflow: hidden;
 }
 .intro_logo_box img {
-    animation: slideUp1 1.5s ease-out forwards;
+    transform: translateY(100%);
+    animation: slideUp 0.5s ease-out forwards;
+    animation-delay: 1s;
 }
 .bilrigo .intro_logo_box {
     height: 139px;
@@ -1376,6 +1378,24 @@ body::-webkit-scrollbar-thumb {
 .thecheat .intro_logo_box img {
     width: 656px;
 }
+.tanghulu .intro_logo_box {
+    height: 200px;
+}
+.tanghulu .intro_logo_box img {
+    width: 366px;
+}
+.biz .intro_logo_box {
+    height: 104px;
+}
+.biz .intro_logo_box img {
+    width: 347px;
+}
+.biz .intro_logo_box {
+    height: 130px;
+}
+.biz .intro_logo_box img {
+    width: 319px;
+}
 .intro_name_box {
     height: 30px;
     overflow: hidden;
@@ -1386,43 +1406,22 @@ body::-webkit-scrollbar-thumb {
     font-weight: 400;
     line-height: 30px;
     font-family: var(--suit);
-    animation: slideUp2 2s ease-out forwards;
+    transform: translateY(100%);
+    animation: slideUp 0.5s ease-out forwards;
+    animation-delay: 1.5s;
 }
 .intro_box .use_skill_box {
     overflow: hidden;
     height: 23px;
 }
 .intro_box .use_skill_box .use_skill_list {
-    animation: slideUp3 2.5s ease-out forwards;
+    animation: slideUp 0.5s ease-out forwards;
+    animation-delay: 2s;
+    transform: translateY(100%);
 }
-@keyframes slideUp1 {
+@keyframes slideUp {
     0% {
-        transform: translateY(139px);
-    }
-    67% {
-        transform: translateY(139px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-@keyframes slideUp2 {
-    0% {
-        transform: translateY(30px);
-    }
-    75% {
-        transform: translateY(30px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-@keyframes slideUp3 {
-    0% {
-        transform: translateY(23px);
-    }
-    80% {
-        transform: translateY(23px);
+        transform: translateY(100%);
     }
     100% {
         transform: translateY(0);
@@ -1503,6 +1502,18 @@ body::-webkit-scrollbar-thumb {
 .sub_cont.link {
     flex: 1 1 auto;
 }
+.sub_cont.link .btn_wrap {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+.sub_cont.link .btn_wrap button {
+    flex: 0 1 auto;
+    width: calc(50% - 4px);
+}
+.sub_cont.link .btn_wrap button span {
+    padding: 0;
+}
 .sub_cont h3 {
     font-size: 25px;
     font-weight: 500;
@@ -1543,7 +1554,7 @@ body::-webkit-scrollbar-thumb {
     font-family: var(--suit);
     font-size: 24px;
 }
-.sub_color ul li:nth-of-type(n+7) {
+.sub_color ul li.fc_bk {
     color: #000;
     font-weight: 500;
 }
@@ -1585,11 +1596,18 @@ body::-webkit-scrollbar-thumb {
 .bilrigo .sub_overview .sub_cont p {
     max-width: 740px;
 }
-.thecheat .sub_overview .inner {
+.thecheat .sub_overview .inner,
+.biz .sub_overview .inner {
     gap: 180px;
+}
+.theland .sub_overview .inner {
+    gap: 360px;
 }
 .thecheat .sub_overview .sub_cont p {
     max-width: 800px;
+}
+.biz .sub_overview .sub_cont p {
+    width: 800px;
 }
 .sub_cont span {
     font-weight: 700;
@@ -1618,8 +1636,21 @@ body::-webkit-scrollbar-thumb {
     padding: 0 32px;
     transition: all 0.3s linear;
 }
+.sub_cont button span.biz_direct_btn {
+    line-height: 55px;
+}
 .sub_cont button span img {
     margin-top: 30px;
+}
+.sub_cont button span em {
+    color: #FB6D3A;
+    font-family: var(--suit);
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 17px;
+    text-align: center;
+    display: inline-block;
+    transform: translateY(-16px);
 }
 .sub_cont button:hover {
     background: var(--ci_yl);
@@ -1649,6 +1680,10 @@ body::-webkit-scrollbar-thumb {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.font_suite {
+    margin-right: 110px;
+}
 .sub_logo {
     max-width: 640px;
 }
@@ -1665,6 +1700,10 @@ body::-webkit-scrollbar-thumb {
 .sub.sub_draft .inner {
     display: block;
     overflow: hidden;
+}
+.theland .sub.sub_draft .inner {
+    width: 100%;
+    padding: 0 0 120px 0;
 }
 .sub.sub_draft .sub_cont {
     float: left;
@@ -1697,6 +1736,7 @@ body::-webkit-scrollbar-thumb {
 .bilrigo .draft_02 h3 {
     margin-left: 48%;
 }
+
 .partner .draft_02,
 .partner .draft_05{
     margin-top: -600px;
@@ -1709,6 +1749,51 @@ body::-webkit-scrollbar-thumb {
 }
 .thecheat .draft_02 h3 {
     margin-left: 67%;
+}
+.tanghulu .draft_02 {
+    margin-top: -120px;
+}
+.tanghulu .draft_02 h3 {
+    margin-left: 63%;
+}
+.tanghulu .draft_03 {
+    margin-top: -200px;
+}
+.tanghulu .draft_04{
+    margin-top: 120px;
+    margin-left: 360px;
+}
+.biz .draft_02,
+.biz .draft_03{
+    margin-top: 80px;
+}
+.biz .draft_03 {
+    float: left!important;
+}
+.biz .draft_02 h3 {
+    margin-left: 26%;
+}
+.biz .sub.sub_draft .sub_cont.draft_04 {
+    float: right;
+}
+.biz .draft_04 h3 {
+    margin-left: 48%;
+}
+.biz .draft_04{
+    margin-top: -358px;
+}
+.theland .sub.sub_draft .sub_cont{
+    float: none;
+}
+.theland .sub.sub_draft .sub_cont.draft_02 {
+    margin: -230px auto 120px;
+    width: fit-content;
+    -webkit-width: fit-content;
+}
+.theland .sub.sub_draft .sub_cont.draft_03 {
+    margin: 0 auto;
+    width: fit-content;
+    -webkit-width: fit-content;
 }
 .sub_footer {
     text-align: center;
