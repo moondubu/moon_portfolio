@@ -1572,16 +1572,16 @@ body::-webkit-scrollbar-thumb {
 .icon ul li {
     cursor: pointer;
 }
-.icon ul li:hover {
+.icon ul li.over {
     -webkit-animation: jello-horizontal 0.9s both;
     animation: jello-horizontal 0.9s both;
 }
-.bilrigo .icon ul li:nth-of-type(4):hover,
-.partner .icon ul li:nth-of-type(6):hover {
+.bilrigo .icon ul li.over:nth-of-type(4),
+.partner .icon ul li.over:nth-of-type(6) {
     -webkit-animation: jello-diagonal-2 0.9s both;
     animation: jello-diagonal-2 0.9s both;
 }
-.bilrigo .icon ul li:nth-of-type(14):hover {
+.bilrigo .icon ul li.over:nth-of-type(14) {
     -webkit-animation: jello-diagonal-1 0.9s both;
     animation: jello-diagonal-1 0.9s both;
 }
