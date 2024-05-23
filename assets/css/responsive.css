@@ -501,4 +501,24 @@
         margin-top: 40px;
     }
     /*section_03*/
+
+
+    /*contact_layer*/
+    .contact_layer .inner .section_tit {
+        margin-bottom: 120px;
+    }
+    .sns_list {
+        flex-direction: column;
+        margin-bottom: 60px;
+        gap: 20px;
+    }
+    .sns_list div {
+        width: 100%;
+        height: 70px;
+    }
+    .sns_list div.bar {
+        height: 1px;
+        width: 32px;
+    }
+    /*contact_layer*/
 }
