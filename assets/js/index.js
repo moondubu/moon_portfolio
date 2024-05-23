@@ -16,6 +16,7 @@ const reflash = document.querySelectorAll('.logo');
 const loading = document.querySelector('.loading');
 const html = document.querySelector('html');
 const mainTxtBox = document.querySelector('.main_text_box');
+const manuBtn = document.querySelector('.m_manu');
 
 
 html.style.overflow = 'hidden'; //로딩 중 스크롤 방지
@@ -111,46 +112,69 @@ iconBtns.forEach((btn, index) => {
 });
 
 
+if(window.outerWidth > 800) {
+    window.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.pageX + 'px';
+        cursor.style.top = e.pageY + 'px';
+        cursor.setAttribute('data-fromTop', (cursor.offsetTop - scrollY))
+    });
+    window.addEventListener('scroll',() => {
+        const fromTop = parseInt(cursor.getAttribute('data-fromTop'));
+        cursor.style.top = scrollY + fromTop + 'px';
+    });
 
-window.addEventListener('mousemove', (e) => {
-    cursor.style.left = e.pageX + 'px';
-    cursor.style.top = e.pageY + 'px';
-    cursor.setAttribute('data-fromTop', (cursor.offsetTop - scrollY))
-});
-window.addEventListener('scroll',() => {
-    const fromTop = parseInt(cursor.getAttribute('data-fromTop'));
-    cursor.style.top = scrollY + fromTop + 'px';
-});
+    click.forEach(click => {
+        click.addEventListener('mouseover', function (){
+            cursor.classList.add('click');
+        });
+        click.addEventListener('mouseout', function (){
+            cursor.classList.remove('click');
+        });
+    });
 
-click.forEach(click => {
-    click.addEventListener('mouseover', function (){
-        cursor.classList.add('click');
+    drag.forEach(drag => {
+        drag.addEventListener('mouseover', function (){
+            cursor.classList.add('drag');
+        });
+        drag.addEventListener('mouseout', function (){
+            cursor.classList.remove('drag');
+        });
     });
-    click.addEventListener('mouseout', function (){
-        cursor.classList.remove('click');
+    reflash.forEach(reflash => {
+        reflash.addEventListener('mouseover', function (){
+            cursor.classList.add('reflash');
+        });
+        reflash.addEventListener('mouseout', function (){
+            cursor.classList.remove('reflash');
+        });
     });
-});
+    document.addEventListener('mouseleave', () => {
+        cursor.style.display = 'none';
+    });
+    document.addEventListener('mouseenter', () => {
+        cursor.style.display = 'block';
+    });
+}
 
-drag.forEach(drag => {
-    drag.addEventListener('mouseover', function (){
-        cursor.classList.add('drag');
-    });
-    drag.addEventListener('mouseout', function (){
-        cursor.classList.remove('drag');
-    });
-});
-reflash.forEach(reflash => {
-    reflash.addEventListener('mouseover', function (){
-        cursor.classList.add('reflash');
-    });
-    reflash.addEventListener('mouseout', function (){
-        cursor.classList.remove('reflash');
-    });
-});
-document.addEventListener('mouseleave', () => {
-    cursor.style.display = 'none';
-});
-document.addEventListener('mouseenter', () => {
-    cursor.style.display = 'block';
+manuBtn.addEventListener('click', ()=>{
+    const manuWrap = document.querySelector('.nav ul');
+    const manuList = document.querySelectorAll('.nav ul li');
+    if(!manuBtn.classList.contains('on')) {
+        manuBtn.classList.add('on');
+        manuBtn.innerHTML = 'Close';
+        manuWrap.classList.add('on');
+        manuList.forEach((list)=>{
+            list.addEventListener('click', ()=>{
+                manuBtn.classList.remove('on');
+                manuBtn.innerHTML = 'Menu';
+                manuWrap.classList.remove('on');
+            });
+        });
+    } else {
+        manuBtn.classList.remove('on');
+        manuBtn.innerHTML = 'Menu';
+        manuWrap.classList.remove('on');
+    }
+
 });
 

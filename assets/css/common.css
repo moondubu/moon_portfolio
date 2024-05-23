@@ -382,6 +382,9 @@ body::-webkit-scrollbar-thumb {
     flex-direction: column;
     justify-content: center;
 }
+.nav .m_manu {
+    display: none;
+}
 .nav ul {
     display: flex;
     justify-content: start;
@@ -870,6 +873,7 @@ body::-webkit-scrollbar-thumb {
 
 .container .section_04 {
     height: 100dvh;
+    position: relative;
 }
 .container .section_03 .section_tit {
     text-align: center;
@@ -1076,7 +1080,7 @@ body::-webkit-scrollbar-thumb {
 }
 .use_icon .hover_btn {
     display: inline-block;
-    border-radius: 6px;
+    border-radius: 4px;
     border: 1px solid #FFF;
     padding: 0 12px;
     line-height: 40px;
