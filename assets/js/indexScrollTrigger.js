@@ -20,6 +20,7 @@ window.addEventListener('load', function () {
             start:'top top',
             pin:true,
             pinSpacing:false,
+            markers:true,
         });
         const moreBtn = document.querySelector('.more_btn');
         moreBtn.addEventListener('click',() => {
