@@ -529,6 +529,9 @@
     #project06 .project_logo_box {
         width: 180px;
     }
+    .project_logo_box {
+        margin-bottom: 20px;
+    }
     .project_script {
         font-size: 13px;
         margin-bottom: 8px;
@@ -544,6 +547,9 @@
         display: block;
         text-align: center;
         height: 330px;
+    }
+    .m_img_box img {
+        max-height: 100%;
     }
     .section_04 .swiper-pagination {
         padding: 0;
