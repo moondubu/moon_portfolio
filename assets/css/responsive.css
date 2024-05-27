@@ -508,7 +508,8 @@
         margin: 40px auto 0;
     }
     .container .section_03 .section_tit {
-        margin-top: 40px;
+        margin-top: 80px;
+        text-align: left;
     }
     /*section_03*/
 
@@ -593,6 +594,9 @@
         height: 50px;
         font-size: 20px;
         font-weight: 300;
+    }
+    .container .section_04 {
+        height: 100vh;
     }
     /*section_04*/
 
