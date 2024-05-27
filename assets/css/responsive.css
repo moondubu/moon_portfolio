@@ -312,6 +312,11 @@
         width: 60px;
         height: 60px;
     }
+    .close_btn {
+        width: 60px;
+        height: 60px;
+    }
+    .close_btn svg,
     .floating svg {
         width: 40px;
         height: 40px;
@@ -321,6 +326,7 @@
         top: auto;
         left: auto;
     }
+    .close_btn span,
     .floating span {
         width: 60px;
         line-height: 12px;
@@ -328,6 +334,7 @@
         font-weight: normal;
         padding: 8px 0 0;
     }
+    .close_btn .moon_shadow,
     .floating .moon_shadow {
         transform: translate(-10%, -10%);
     }
@@ -606,5 +613,6 @@
         height: 1px;
         width: 32px;
     }
+
     /*contact_layer*/
 }
