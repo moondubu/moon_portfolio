@@ -511,20 +511,19 @@
     #project06{
         background: var(--ci_pp);
     }
-    .project_slide_box:nth-child(1) .project_logo_box {
+    #project01 .project_logo_box {
         width: 128px;
         margin-bottom: 20px;
     }
-    .project_slide_box:nth-child(2) .project_logo_box,
-    .project_slide_box:nth-child(3) .project_logo_box {
+    #project02 .project_logo_box,
+    #project03 .project_logo_box {
         width: 240px;
     }
-    .project_slide_box:nth-child(4) .project_logo_box {
+    #project04 .project_logo_box {
         width: 152px;
     }
-    .project_slide_box:nth-child(5) .project_logo_box,
-    .project_slide_box:nth-child(4) .project_logo_box {
-
+    #project05 .project_logo_box,
+    #project06 .project_logo_box {
         width: 180px;
     }
     .project_script {
