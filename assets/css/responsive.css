@@ -543,6 +543,7 @@
     .m_img_box {
         display: block;
         text-align: center;
+        height: 330px;
     }
     .section_04 .swiper-pagination {
         padding: 0;
