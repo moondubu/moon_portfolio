@@ -533,6 +533,7 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     top: calc(50dvh - 315px);
     left: calc(50% - 315px);
+    transition: all 0.3s ease-out;
 }
 .moon_box .moon {
     position: absolute;
