@@ -888,6 +888,9 @@ body::-webkit-scrollbar-thumb {
     width: 100%;
     cursor: pointer;
 }
+.m_img_box {
+    display: none;
+}
 #project01 {
     background: url("../image/bg_bilrigo.webp") no-repeat center/100% 100%;
 }
