@@ -464,7 +464,7 @@
         padding-left: 8px;
     }
     .container .section_03 .inner {
-        padding: 40px 0;
+        padding: 40px 0 0;
     }
     .tag_wrap {
         height: 18px;
@@ -531,7 +531,7 @@
         width: 240px;
     }
     #project04 .project_logo_box {
-        width: 152px;
+        width: 120px;
     }
     #project05 .project_logo_box,
     #project06 .project_logo_box {
