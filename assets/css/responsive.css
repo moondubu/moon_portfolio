@@ -570,7 +570,7 @@
         border: none;
         gap: 8px;
         height: auto!important;
-        bottom: 20px !important;
+        bottom: 52px !important;
         align-items: start;
     }
     .section_04 .swiper-pagination-bullet div,
@@ -599,7 +599,8 @@
         font-weight: 300;
     }
     .container .section_04 {
-        height: calc(100vh - 121px);
+        height: calc(100vh - 80px);
+        padding-bottom: 41px;
     }
     /*section_04*/
 
