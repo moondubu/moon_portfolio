@@ -596,7 +596,7 @@
         font-weight: 300;
     }
     .container .section_04 {
-        height: 100vh;
+        height: calc(100vh - 121px);
     }
     /*section_04*/
 
