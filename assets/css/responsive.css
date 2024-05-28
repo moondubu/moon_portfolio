@@ -370,6 +370,9 @@
     }
     /*common*/
     /*section_01*/
+    .container .section_01 {
+        height: calc(100vh - 121px);
+    }
     .comet_01 {
         top: 10%;
         left: 10%;
