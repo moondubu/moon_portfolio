@@ -557,7 +557,7 @@
     .m_img_box {
         display: block;
         text-align: center;
-        height: 330px;
+        height: 275px;
     }
     .m_img_box img {
         max-height: 100%;
@@ -570,7 +570,7 @@
         border: none;
         gap: 8px;
         height: auto!important;
-        bottom: 52px !important;
+        bottom: 16px !important;
         align-items: start;
     }
     .section_04 .swiper-pagination-bullet div,
@@ -602,11 +602,14 @@
         height: calc(100vh - 80px);
         padding-bottom: 41px;
     }
+    .section_04 .swiper-pagination-bullet-active .pg_text_box {
+        display: none;
+    }
     /*section_04*/
 
     /*contact_layer*/
     .contact_layer .inner .section_tit {
-        margin-bottom: 120px;
+        margin-bottom: 36px;
     }
     .sns_list {
         flex-direction: column;
@@ -621,6 +624,9 @@
         height: 1px;
         width: 32px;
     }
-
+    .copyright {
+        font-size: 14px;
+        padding: 0 16px;
+    }
     /*contact_layer*/
 }
