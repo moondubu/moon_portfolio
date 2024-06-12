@@ -601,6 +601,7 @@
     .container .section_04 {
         height: calc(100vh - 80px);
         padding-bottom: 41px;
+        min-height: 600px;
     }
     .section_04 .swiper-pagination-bullet-active .pg_text_box {
         display: none;
