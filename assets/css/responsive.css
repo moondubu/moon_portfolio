@@ -372,6 +372,7 @@
     /*section_01*/
     .container .section_01 {
         height: calc(100vh - 121px);
+        min-height: 600px;
     }
     .comet_01 {
         top: 10%;
