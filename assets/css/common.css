@@ -1317,6 +1317,7 @@ body::-webkit-scrollbar-thumb {
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
     animation: zoomIn 1s ease-out forwards;
 }
 .bilrigo .sub_main {
