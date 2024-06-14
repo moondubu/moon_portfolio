@@ -341,12 +341,11 @@
     .arrow {
         display: none;
     }
-    .mouseball {
-        x:40px;
-        y:38px;
-        width: 12px;
-        height: 12px;
-        rx:6px;
+    .pc_mouseball {
+        display: none;
+    }
+    .m_mouseball {
+        display: block;
         animation: upDownBall linear 1.5s infinite;
     }
     @keyframes upDownBall {

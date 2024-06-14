@@ -607,6 +607,9 @@ body::-webkit-scrollbar-thumb {
 .scroll_down .arrow {
     animation: upDown 1s linear infinite;
 }
+.m_mouseball {
+    display: none;
+}
 @keyframes upDown {
     0%{
         transform:translateY(-2.5px);
@@ -1108,7 +1111,7 @@ body::-webkit-scrollbar-thumb {
     transition: all 0.3s ease;
 }
 .link_btn:hover {
-    border-color: var(--ci_yl);
+    border-color: transparent;
     background: var(--ci_yl);
     color: var(--ci_pp);
 }
