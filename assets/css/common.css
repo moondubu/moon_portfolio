@@ -1299,6 +1299,7 @@ body::-webkit-scrollbar-thumb {
     bottom: 20px;
     text-align: center;
     width: 100%;
+    z-index: 10;
 }
 
 
@@ -1728,16 +1729,8 @@ body::-webkit-scrollbar-thumb {
 }
 
 .sub.sub_draft .sub_cont img {
-    webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -o-user-select: none;
     user-select: none;
     -webkit-user-drag: none;
-    -khtml-user-drag: none;
-    -moz-user-drag: none;
-    -o-user-drag: none;
-    user-drag: none;
 }
 .bilrigo .draft_02 {
     margin-top: -733px;
@@ -1797,12 +1790,10 @@ body::-webkit-scrollbar-thumb {
 .theland .sub.sub_draft .sub_cont.draft_02 {
     margin: -230px auto 120px;
     width: fit-content;
-    -webkit-width: fit-content;
 }
 .theland .sub.sub_draft .sub_cont.draft_03 {
     margin: 0 auto;
     width: fit-content;
-    -webkit-width: fit-content;
 }
 .sub_footer {
     text-align: center;
