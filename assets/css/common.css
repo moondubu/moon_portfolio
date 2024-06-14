@@ -32,7 +32,7 @@ input[type='number']::-webkit-inner-spin-button {
 button:hover {
     background: var(--ci_yl)!important;
     color: var(--ci_pp)!important;
-    border-color: var(--ci_yl)!important;
+    border-color: transparent!important;
 }
 em {
     font-style: normal;
