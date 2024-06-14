@@ -1303,8 +1303,13 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
     width: 100%;
     z-index: 10;
+    line-height: 20px;
 }
-
+.copyright a{
+    display: inline-block;
+    margin-left: 12px;
+    padding-top: 2px;
+}
 
 /***************************************sub**************************************/
 .wrap.bilrigo,
