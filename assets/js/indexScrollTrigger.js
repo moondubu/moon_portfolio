@@ -25,7 +25,7 @@ window.addEventListener('load', function () {
         moreBtn.addEventListener('click',() => {
             if (!moreBtn.classList.contains('disabled')) {
                 let tl = gsap.timeline();
-                let items = Array.from(document.querySelectorAll('.experience_wrap li')).slice(-4);
+                let items = Array.from(document.querySelectorAll('.experience_wrap li')).slice(-5);
 
                 if (moreBtn.textContent === 'MORE VIEW') {
                     moreBtn.textContent = 'FOLD';
