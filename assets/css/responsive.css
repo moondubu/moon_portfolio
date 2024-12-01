@@ -10,7 +10,6 @@
     .container .section .inner,
     .footer .inner {
         width: calc(100% - 80px);
-        margin: 0 40px;
     }
     .nav ul li a {
         font-size: 16px;
@@ -37,10 +36,10 @@
         right: 170px;
     }
     .moon_box {
-        width: 30%;
-        height: 30vw;
-        top: 25%;
-        left: 35%;
+        width: 40%;
+        height: 40vw;
+        top: 5vw;
+        left: 30%;
     }
     .moon_box .moon{
         width: 100%;
@@ -72,17 +71,22 @@
     /*** section_01 ***/
 
     /*** section_02 ***/
+    .container .section_02 .inner {
+        gap: 80px;
+        justify-content: center;
+    }
     .logo_box {
         flex: 0 0 auto;
-        width: calc(50% - 40px);
-        height: calc(50vw - 80px);
+        width: 400px;
+        height: 400px;
         border-radius: 40px;
         margin-left: 0;
         padding-top: 80px;
         gap: 60px;
     }
-    .container .section_02 .inner {
+    .about_text_box {
         gap: 40px;
+        max-width: 500px;
     }
     .logo_box .about_logo {
         width: 80%;
@@ -96,12 +100,6 @@
     }
     .logo_box .skill_ps div {
         width: 40px;
-    }
-    .about_text_box {
-        gap: 40px;
-    }
-    .about_text_box p {
-        font-size: 16px;
     }
     .enter {
         display: none;
@@ -253,6 +251,33 @@
     /*** contact_layer ***/
 
 }
+@media screen and (max-width:1024px) {
+    /*** section_01 ***/
+    .moon_box {
+        width: 50%;
+        height: 50vw;
+        top: 10vw;
+        left: 25%;
+    }
+    .scroll_down {
+        width: 70px;
+        height: 70px;
+        bottom: 20px;
+        left: calc(50% - 35px);
+    }
+    /*** section_01 ***/
+    /*** section_02 ***/
+    .logo_box {
+        width: 380px;
+        height: 380px;
+        gap: 60px;
+        padding-top: 40px;
+    }
+    .about_text_box p {
+        font-size: 14px;
+    }
+    /*** section_02 ***/
+}
 @media screen and (max-width:800px) {
     /*common*/
     .header {
@@ -370,7 +395,6 @@
     /*common*/
     /*section_01*/
     .container .section_01 {
-        height: calc(100vh - 121px);
         min-height: 600px;
     }
     .comet_01 {
@@ -382,13 +406,10 @@
         right: 10%;
     }
     .moon_box {
-        width: 100%;
-        height: 80vw;
-        left: 0;
-        top: calc(50vh - 60vw);
-    }
-    .scroll_down {
-        bottom: 60px;
+        width: 70%;
+        height: 70vw;
+        left: 15%;
+        top: calc(50vh - 35vw);
     }
     .main_text_box {
         letter-spacing: -1px;
@@ -418,24 +439,18 @@
     }
     /*section_01*/
     /*section_02*/
-    .container .section_02 {
-        padding: 60px 0 300px;
-    }
     .container .section_02 .inner {
-        display: flex;
         flex-direction: column;
-        gap: 20px;
-        align-items: center;
+        gap: 40px;
     }
     .logo_box {
         width: 100%;
-        height: 30dvh;
-        gap: 20px;
-        padding-top: 40px;
+        height: 25dvh;
+        gap: 40px;
         box-shadow: -25px -25px 50px 0 #190a31, 25px 25px 50px 0 #000;
     }
     .logo_box .about_logo {
-        width: 50%;
+        width: 40%;
     }
     .logo_box .skill_list {
         width: 100%;
@@ -446,6 +461,9 @@
         gap: normal;
         justify-content: space-evenly;
         align-items: center;
+    }
+    .about_text_box {
+        max-width: none;
     }
     .about_text_box p {
         font-size: 13px;
@@ -630,4 +648,39 @@
         padding: 0 16px;
     }
     /*contact_layer*/
+}
+
+@media screen and (max-width:400px) {
+    .moon_box {
+        width: 100%;
+        height: 80vw;
+        left: 0;
+        top: calc(50vh - 40vw);
+    }
+    .scroll_down {
+        bottom: 60px;
+    }
+    .logo_box {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        gap: 12px;
+        padding: 12px 0;
+        border-radius: 12px;
+        justify-content: center;
+    }
+    .about_text_box p {
+        font-size: 12px;
+    }
+    .logo_box .skill_list {
+        width: 84px;
+    }
+    .logo_box .skill_ps {
+        flex-wrap: wrap;
+        gap: 12px;
+        flex: 0 0 auto;
+    }
+    .logo_box .skill_ps div {
+        width: 20px;
+    }
 }

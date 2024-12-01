@@ -297,7 +297,7 @@ body::-webkit-scrollbar-thumb {
 
 .wrap {
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     position: relative;
 }
 
@@ -600,9 +600,12 @@ body::-webkit-scrollbar-thumb {
     position: absolute;
     bottom: 40px;
     left: calc(50% - 45px);
-    opacity: 0;
     animation: fadeIn 0.5s linear forwards;
     animation-delay: 2s;
+}
+.scroll_down svg {
+    width: 100%;
+    height: 100%;
 }
 .scroll_down .arrow {
     animation: upDown 1s linear infinite;
@@ -644,13 +647,13 @@ body::-webkit-scrollbar-thumb {
 
 
 .container .section_02 {
-    padding: 120px 0 600px;
     z-index: 1;
 }
 .container .section_02 .inner {
     display: flex;
     gap: 80px;
     align-items: center;
+    height: 100dvh;
 }
 .logo_box {
     width: 600px;
@@ -740,7 +743,7 @@ body::-webkit-scrollbar-thumb {
 }
 .about_text_box p {
     font-family: var(--suit);
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 300;
     line-height: 1.6
 }
@@ -1312,14 +1315,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 /***************************************sub**************************************/
-.wrap.bilrigo,
-.wrap.partner,
-.wrap.thecheat,
-.wrap.tanghulu,
-.wrap.biz,
-.wrap.theland{
-    overflow: visible;
-}
 
 .sub_main {
     height: 100dvh;
