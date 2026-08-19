@@ -22,16 +22,21 @@ window.addEventListener('load', function () {
             pinSpacing:false,
         });
         const moreBtn = document.querySelector('.more_btn');
+        const foldItems = Array.from(document.querySelectorAll('.experience_wrap li')).slice(8);
+
+        foldItems.forEach((item) => {
+            item.classList.add('hide');
+        });
+
         moreBtn.addEventListener('click',() => {
             if (!moreBtn.classList.contains('disabled')) {
                 let tl = gsap.timeline();
-                let items = Array.from(document.querySelectorAll('.experience_wrap li')).slice(-3);
 
                 if (moreBtn.textContent === 'MORE VIEW') {
                     moreBtn.textContent = 'FOLD';
                     moreBtn.classList.add('disabled');
 
-                    items.forEach((item,index) => {
+                    foldItems.forEach((item,index) => {
                         if (item.classList.contains('hide')) {
                             tl.from(item, {
                                 duration: 0.5,
@@ -39,7 +44,7 @@ window.addEventListener('load', function () {
                                 y: 30,
                                 ease: 'power3.out',
                                 onComplete: function() {
-                                    if (index === items.length - 1) {
+                                    if (index === foldItems.length - 1) {
                                         moreBtn.classList.remove('disabled');
                                     }
                                 }
@@ -48,7 +53,7 @@ window.addEventListener('load', function () {
                         }
                     });
                 } else {
-                    items.forEach((item) => {
+                    foldItems.forEach((item) => {
                         moreBtn.textContent = 'MORE VIEW';
                         moreBtn.classList.remove('disabled');
                         item.classList.add('hide');
