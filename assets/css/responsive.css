@@ -1,0 +1,692 @@
+@media screen and (max-width:1480px) {
+    /*** 공통 ***/
+    .header {
+        height: 80px;
+    }
+    .logo {
+        width: 80px;
+    }
+    .header .inner,
+    .container .section .inner,
+    .footer .inner {
+        width: calc(100% - 80px);
+    }
+    .nav ul li a {
+        font-size: 16px;
+    }
+    .nav ul li a:hover:after {
+        width: 25px;
+    }
+    .section_tit {
+        font-size: 60px;
+    }
+    /*** 공통 ***/
+
+    /*** section_01 ***/
+    .moving_star {
+        max-width: 100%;
+        left: 0;
+    }
+    .moving_star svg {
+        width: 100%;
+        height: 100%;
+    }
+    .comet_02 {
+        bottom: 150px;
+        right: 170px;
+    }
+    .moon_box {
+        width: 40%;
+        height: 40vw;
+        top: 5vw;
+        left: 30%;
+    }
+    .moon_box .moon{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+    }
+    .moon_box .aura {
+        width: 180%;
+        height: 180%;
+        top: -40%;
+        left: -40%;
+    }
+    .main_text_box {
+        width: 210px;
+        height: 152px;
+        top: calc(50% - 76px);
+        left: calc(50% - 120px);
+    }
+    .main_text_box .main_text_01 {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    .main_text_box .main_text_02 {
+        font-size: 15px;
+        line-height: 25px;
+        margin-top: 20px;
+    }
+    /*** section_01 ***/
+
+    /*** section_02 ***/
+    .container .section_02 .inner {
+        gap: 80px;
+        justify-content: center;
+    }
+    .logo_box {
+        flex: 0 0 auto;
+        width: 400px;
+        height: 400px;
+        border-radius: 40px;
+        margin-left: 0;
+        padding-top: 80px;
+        gap: 60px;
+    }
+    .about_text_box {
+        gap: 40px;
+        max-width: 500px;
+    }
+    .logo_box .about_logo {
+        width: 80%;
+    }
+    .logo_box .about_logo svg {
+        width: 100%;
+        height: auto;
+    }
+    .logo_box .skill_ps {
+        height: 40px;
+    }
+    .logo_box .skill_ps div {
+        width: 40px;
+    }
+    .enter {
+        display: none;
+    }
+    /*** section_02 ***/
+
+    /*** section_03 ***/
+    .work_list {
+        gap: 80px;
+    }
+    .work_list > li {
+        width: calc(50% - 80px);
+    }
+    .work_list li h3 {
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .work_list li ul li {
+        font-size: 14px;
+    }
+    .work_list li ul li span {
+        display: block;
+        margin-top: 8px;
+    }
+    .experience .experience_wrap li {
+        flex: 0 1 calc(50% - 35px);
+    }
+    .experience ul li p {
+        font-size: 16px;
+    }
+    .experience .experience_wrap li span br {
+        display: none;
+    }
+    .container .section_03 .inner {
+        padding: 120px 0;
+    }
+    .container .section_03 .section_tit {
+        margin-top: 120px;
+    }
+
+    /*** section_03 ***/
+
+    /*** section_04 ***/
+    #project03 .project_logo_box {
+        width: 200px;
+    }
+    .project_script {
+        font-size: 16px;
+        margin-bottom: 12px;
+    }
+    .use_skill_list {
+        margin-bottom: 20px;
+    }
+    .use_skill_list span {
+        font-size: 10px;
+        height: 21px;
+        line-height: 19px;
+    }
+    .tit {
+        font-size: 16px;
+        line-height: 20px;
+    }
+    .color {
+        margin-left: 30px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+    .color:after {
+        width: 12px;
+        height: 12px;
+        top: 1px;
+        left: -18px;
+        line-height: 20px;
+    }
+    .use_icon .hover_btn {
+        padding: 0 12px;
+        line-height: 32px;
+        height: 32px;
+        font-size: 14px;
+    }
+    .icon_set_box {
+        left: 215px;
+    }
+    .bilrigo_uxui_icon_box,
+    .bilrigo_icon_box {
+        bottom: calc(50% - 151px);
+    }
+    .partner_icon_box {
+        bottom: calc(50% - 76px);
+    }
+    .thecheat_icon_box {
+        bottom: calc(50% - 116px);
+    }
+    .btn_wrap {
+        margin-top: 20px;
+    }
+    .link_btn {
+        width: 120px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 16px;
+    }
+    #project03, #project04, #project05, #project06, #project07, #project08, #project01, #project02 {
+        background-size : cover;
+    }
+    .section_04 .swiper-pagination-bullet,
+    .section_04 .swiper-pagination-bullet .pg_img_box,
+    .pg_img_box img {
+        width: 48px;
+        height: 48px;
+    }
+    .section_04 .swiper-pagination {
+        padding: 12px;
+        gap: 12px;
+        height: 72px;
+        bottom: 40px !important;
+    }
+    .section_04 .swiper-pagination-bullet-active {
+        height: 160px;
+        width: 120px;
+    }
+    .section_04 .swiper-pagination-bullet-active .pg_img_box {
+        width: 100%;
+        height: auto;
+        padding: 12px;
+    }
+    .pg_text_box .project_name {
+        font-size: 20px;
+        line-height: 25px;
+        margin-bottom: 8px;
+    }
+    .pg_text_box .project_name {
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 4px;
+    }
+    .pg_text_box .company_name {
+        margin-bottom: 12px;
+        font-size: 12px;
+    }
+    .section_04 .swiper-pagination-bullet-active .pg_text_box {
+        padding: 0 12px 12px;
+    }
+    /*** section_04 ***/
+
+    /*** contact_layer ***/
+    .contact_layer .inner .section_tit {
+        margin-bottom: 225px;
+    }
+    /*** contact_layer ***/
+
+}
+@media screen and (max-width:1024px) {
+    /*** section_01 ***/
+    .moon_box {
+        width: 50%;
+        height: 50vw;
+        top: 10vw;
+        left: 25%;
+    }
+    .scroll_down {
+        width: 70px;
+        height: 70px;
+        bottom: 20px;
+        left: calc(50% - 35px);
+    }
+    /*** section_01 ***/
+    /*** section_02 ***/
+    .logo_box {
+        width: 380px;
+        height: 380px;
+        gap: 60px;
+        padding-top: 40px;
+    }
+    .about_text_box p {
+        font-size: 14px;
+    }
+    /*** section_02 ***/
+}
+@media screen and (max-width:800px) {
+    /*common*/
+    .header {
+        height: 60px;
+    }
+    .logo {
+        width: 60px;
+    }
+    .nav .m_manu {
+        display: block;
+        color: var(--ci_yl);
+        position: relative;
+        z-index: 101;
+    }
+    .nav .m_manu.on {
+        color: var(--ci_pp);
+    }
+    .nav ul {
+        width: 100%;
+        height: 100dvh;
+        position: fixed;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        background: var(--ci_yl);
+        flex-direction: column;
+        gap: 40px;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.3s ease-out;
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+    .nav ul.on {
+        display: flex;
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    .nav ul li a {
+        font-size: 25px;
+        color: var(--ci_pp);
+        font-weight: 700;
+    }
+    .header .inner,
+    .container .section .inner,
+    .footer .inner {
+        width: calc(100% - 40px);
+        margin: 0 20px;
+    }
+    .cursor {
+        display: none;
+    }
+    .floating {
+        bottom: 20px;
+        right: 20px;
+        width: 60px;
+        height: 60px;
+    }
+    .close_btn {
+        width: 60px;
+        height: 60px;
+    }
+    .close_btn svg,
+    .floating svg {
+        width: 40px;
+        height: 40px;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+        top: auto;
+        left: auto;
+    }
+    .close_btn span,
+    .floating span {
+        width: 60px;
+        line-height: 12px;
+        font-size: 11px;
+        font-weight: normal;
+        padding: 8px 0 0;
+    }
+    .close_btn .moon_shadow,
+    .floating .moon_shadow {
+        transform: translate(-10%, -10%);
+    }
+    .arrow {
+        display: none;
+    }
+    .pc_mouseball {
+        display: none;
+    }
+    .m_mouseball {
+        display: block;
+        animation: upDownBall linear 1.5s infinite;
+    }
+    @keyframes upDownBall {
+        0%{
+            transform:translateY(12px);
+            opacity: 0;
+        }
+        50%{
+            transform:translateY(12px);
+            opacity: 1;
+        }
+        70% {
+            transform:translateY(0);
+        }
+        100% {
+            transform:translateY(0);
+        }
+    }
+    .section_tit {
+        font-size: 40px;
+    }
+    /*common*/
+    /*section_01*/
+    .container .section_01 {
+        min-height: 600px;
+    }
+    .comet_01 {
+        top: 10%;
+        left: 10%;
+    }
+    .comet_02 {
+        bottom: 10%;
+        right: 10%;
+    }
+    .moon_box {
+        width: 70%;
+        height: 70vw;
+        left: 15%;
+        top: calc(50vh - 35vw);
+    }
+    .main_text_box {
+        letter-spacing: -1px;
+    }
+    .main_text_box .main_text_02 {
+        line-height: 20px;
+        margin-top: 16px;
+    }
+    .moving_star {
+        max-width: fit-content;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        transform: translateY(0);
+    }
+    .moving_star svg {
+        width: auto;
+        height: 100%;
+    }
+    @keyframes movingStar {
+        0% {
+            transform: translateY(0) rotate(0);
+        }
+        100% {
+            transform: translateY(0) rotate(360deg);
+        }
+    }
+    /*section_01*/
+    /*section_02*/
+    .container .section_02 .inner {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .logo_box {
+        width: 100%;
+        height: 25dvh;
+        gap: 40px;
+        box-shadow: -25px -25px 50px 0 #190a31, 25px 25px 50px 0 #000;
+    }
+    .logo_box .about_logo {
+        width: 40%;
+    }
+    .logo_box .skill_list {
+        width: 100%;
+    }
+    .logo_box .skill_ps {
+        height: fit-content;
+        flex-wrap: wrap;
+        gap: normal;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .about_text_box {
+        max-width: none;
+    }
+    .about_text_box p {
+        font-size: 13px;
+    }
+    /*section_02*/
+    /*section_03*/
+    .work_list {
+        flex-direction: column;
+        gap: 40px;
+    }
+    .work_list > li {
+        width: 100%;
+    }
+    .work_list li ul {
+        margin-top: 20px;
+    }
+    .work_list li ul li {
+        margin-left: 8px;
+        padding-left: 8px;
+    }
+    .container .section_03 .inner {
+        padding: 40px 0 0;
+    }
+    .tag_wrap {
+        height: 18px;
+        gap: 12px;
+        margin:8px 0 0 8px;
+    }
+    .work_tag {
+        font-size: 13px;
+    }
+    .work_tag svg {
+        width: 18px;
+        height: 18px;
+    }
+    .experience .experience_wrap {
+        flex-direction: column;
+        justify-content: start;
+        gap: 40px;
+    }
+    .experience ul li p {
+        font-size: 15px;
+    }
+    .experience .experience_wrap li {
+        flex: 1 1 auto;
+    }
+    .experience .experience_wrap li span {
+        margin-top: 12px;
+    }
+    .experience ul li .tag_wrap {
+        margin: 0;
+        width: 15px;
+        height: 15px;
+    }
+    .experience ul li .tag_wrap .work_tag svg {
+        width: 15px;
+        height: 15px;
+    }
+    .more_btn {
+        width: 100%;
+        height: 52px;
+        line-height: 52px;
+        margin: 40px auto 0;
+    }
+    .container .section_03 .section_tit {
+        margin-top: 80px;
+        text-align: left;
+    }
+    /*section_03*/
+
+    /*section_04*/
+    #project03,
+    #project04,
+    #project05,
+    #project06,
+    #project07,
+    #project08,
+    #project01,
+    #project02 {
+        background: var(--ci_pp);
+    }
+    #project03 .project_logo_box,
+    #project01 .project_logo_box {
+        width: 128px;
+        margin-bottom: 20px;
+    }
+    #project02 .project_logo_box,
+    #project04 .project_logo_box,
+    #project05 .project_logo_box {
+        width: 240px;
+    }
+    #project06 .project_logo_box {
+        width: 120px;
+    }
+    #project07 .project_logo_box,
+    #project08 .project_logo_box {
+        width: 180px;
+    }
+    .project_logo_box {
+        margin-bottom: 20px;
+    }
+    .project_script {
+        font-size: 13px;
+        margin-bottom: 8px;
+    }
+    .project_description .use_skill_list {
+        flex-wrap: wrap;
+    }
+    .use_color,
+    .use_icon {
+        display: none;
+    }
+    .m_img_box {
+        display: block;
+        text-align: center;
+        height: 275px;
+    }
+    .m_img_box img {
+        max-height: 100%;
+    }
+    .section_04 .swiper-pagination {
+        padding: 0;
+        border-radius: 0;
+        backdrop-filter: none;
+        background:transparent;
+        border: none;
+        gap: 8px;
+        height: auto!important;
+        bottom: 16px !important;
+        align-items: start;
+    }
+    .section_04 .swiper-pagination-bullet div,
+    .section_04 .swiper-pagination-bullet-active div {
+        display: none;
+    }
+    .section_04 .swiper-pagination-bullet {
+        width: 6px;
+        height: 6px;
+        background: #FFF;
+    }
+    .section_04 .swiper-pagination-bullet-active {
+        height: 6px;
+        width: 6px;
+        border-radius: 3px;
+        background: var(--ci_yl);
+        display: block;
+    }
+    .btn_wrap {
+        width: auto;
+    }
+    .link_btn {
+        width: 100%;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+        font-weight: 300;
+    }
+    .container .section_04 {
+        height: calc(100vh - 80px);
+        padding-bottom: 41px;
+        min-height: 600px;
+    }
+    .section_04 .swiper-pagination-bullet-active .pg_text_box {
+        display: none;
+    }
+    /*section_04*/
+
+    /*contact_layer*/
+    .contact_layer .inner .section_tit {
+        margin-bottom: 36px;
+    }
+    .sns_list {
+        flex-direction: column;
+        margin-bottom: 40px;
+        gap: 16px;
+    }
+    .sns_list div {
+        width: 100%;
+        height: 70px;
+    }
+    .sns_list div.bar {
+        height: 1px;
+        width: 32px;
+    }
+    .copyright {
+        font-size: 14px;
+        padding: 0 16px;
+    }
+    /*contact_layer*/
+}
+
+@media screen and (max-width:400px) {
+    .moon_box {
+        width: 100%;
+        height: 80vw;
+        left: 0;
+        top: calc(50vh - 40vw);
+    }
+    .scroll_down {
+        bottom: 60px;
+    }
+    .logo_box {
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        gap: 12px;
+        padding: 12px 0;
+        border-radius: 12px;
+        justify-content: center;
+    }
+    .about_text_box p {
+        font-size: 12px;
+    }
+    .logo_box .skill_list {
+        width: 84px;
+    }
+    .logo_box .skill_ps {
+        flex-wrap: wrap;
+        gap: 12px;
+        flex: 0 0 auto;
+    }
+    .logo_box .skill_ps div {
+        width: 20px;
+    }
+}

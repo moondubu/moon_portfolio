@@ -1,0 +1,14 @@
+<svg width="71" height="70" viewBox="0 0 71 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="path-1-inside-1_4579_6622" fill="white">
+<rect x="14.3633" y="9.79688" width="42" height="50.4" rx="1"/>
+</mask>
+<rect x="14.3633" y="9.79688" width="42" height="50.4" rx="1" stroke="#49C3FF" stroke-width="5" mask="url(#path-1-inside-1_4579_6622)"/>
+<ellipse cx="23.1133" cy="21.3467" rx="1.75" ry="1.75" fill="#49C3FF"/>
+<ellipse cx="23.1133" cy="30.4473" rx="1.75" ry="1.75" fill="#49C3FF"/>
+<ellipse cx="23.1133" cy="39.5469" rx="1.75" ry="1.75" fill="#49C3FF"/>
+<ellipse cx="23.1133" cy="48.6475" rx="1.75" ry="1.75" fill="#49C3FF"/>
+<path d="M29 21.4971L48 21.4971" stroke="#49C3FF" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M29 30.4971L48 30.4971" stroke="#49C3FF" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M29 39.4971L48 39.4971" stroke="#49C3FF" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M29 48.4971L48 48.4971" stroke="#49C3FF" stroke-width="2.5" stroke-linecap="round"/>
+</svg>
