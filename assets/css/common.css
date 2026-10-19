@@ -2290,11 +2290,118 @@ body::-webkit-scrollbar-thumb {
     user-select: none;
     -webkit-user-drag: none;
 }
-.bilrigo .draft_02 {
-    margin-top: -733px;
+.bilrigo .sub.sub_draft .inner {
+    position: relative;
+    height: 2640px;
+    overflow: visible;
 }
-.bilrigo .draft_02 h3 {
-    margin-left: 48%;
+.bilrigo .sub.sub_draft .sub_cont {
+    position: absolute;
+    float: none;
+    margin: 0;
+}
+.bilrigo .draft_01 {
+    top: 120px;
+    left: 0;
+    width: 904px;
+}
+.bilrigo .draft_list {
+    top: 430px;
+    right: 56px;
+    width: 360px;
+}
+.bilrigo .draft_02 {
+    top: 1205px;
+    left: 56px;
+    width: 800px;
+}
+.bilrigo .draft_search {
+    top: 1685px;
+    right: 0;
+    width: 360px;
+}
+.bilrigo .draft_01 > img,
+.bilrigo .draft_02 > img,
+.bilrigo .draft_list > img,
+.bilrigo .draft_search > img {
+    display: block;
+    box-sizing: content-box;
+    width: 360px;
+    height: auto;
+    border: 2px solid #000;
+    border-radius: 20px;
+}
+.bilrigo .draft_note {
+    position: absolute;
+    color: #333;
+}
+.bilrigo .draft_note h4,
+.bilrigo .draft_note p {
+    color: inherit;
+    font-family: var(--suit);
+    font-size: 18px;
+    line-height: 2;
+}
+.bilrigo .draft_note h4 {
+    font-weight: 700;
+}
+.bilrigo .draft_01 .draft_note {
+    left: 429px;
+    width: 560px;
+}
+.bilrigo .main_header_note { top: 148px; }
+.bilrigo .main_category_note { top: 673px; }
+.bilrigo .main_question_note { top: 825px; }
+.bilrigo .list_category_note {
+    top: 76px;
+    left: -560px;
+    width: 480px;
+    text-align: right;
+}
+.bilrigo .list_filter_note {
+    top: 900px;
+    right: -60px;
+    width: 500px;
+    text-align: right;
+}
+.bilrigo .draft_02 .draft_note {
+    top: 345px;
+    left: 440px;
+    width: 420px;
+}
+.bilrigo .draft_search .draft_note {
+    right: 440px;
+    width: 500px;
+    text-align: right;
+}
+.bilrigo .search_input_note { top: 146px; }
+.bilrigo .search_keyword_note { top: 494px; }
+.bilrigo .draft_search .search_question_note {
+    bottom: 0;
+    width: 720px;
+}
+.bilrigo .draft_connectors {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 800px;
+    height: 800px;
+    overflow: visible;
+    pointer-events: none;
+}
+.bilrigo .draft_list .draft_connectors {
+    left: -60px;
+    width: 480px;
+    height: 840px;
+}
+.bilrigo .draft_01 .draft_connectors {
+    width: 904px;
+    height: 854px;
+}
+.bilrigo .draft_search .draft_connectors {
+    left: -60px;
+    width: 420px;
+    height: 777px;
 }
 
 .partner .draft_02,
