@@ -2077,7 +2077,7 @@ body::-webkit-scrollbar-thumb {
 .bilrigo_uxui .renewal_screen figcaption {
     padding-top: 12px;
     color: #888;
-    font-size: 12px;
+    font-size: 16px;
     text-align: center;
 }
 .bilrigo_uxui .renewal_screen_asis {
@@ -2191,7 +2191,7 @@ body::-webkit-scrollbar-thumb {
     padding-top: 16px;
     color: #888;
     font-family: var(--suit);
-    font-size: 14px;
+    font-size: 16px;
     text-align: center;
 }
 @keyframes renewalMarquee {
