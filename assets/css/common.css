@@ -2292,7 +2292,7 @@ body::-webkit-scrollbar-thumb {
 }
 .bilrigo .sub.sub_draft .inner {
     position: relative;
-    height: 2640px;
+    height: 4440px;
     overflow: visible;
 }
 .bilrigo .sub.sub_draft .sub_cont {
@@ -2322,6 +2322,8 @@ body::-webkit-scrollbar-thumb {
 }
 .bilrigo .draft_01 > img,
 .bilrigo .draft_02 > img,
+.bilrigo .draft_toon > img,
+.bilrigo .draft_toon_mobile > img,
 .bilrigo .draft_list > img,
 .bilrigo .draft_search > img {
     display: block;
@@ -2402,6 +2404,46 @@ body::-webkit-scrollbar-thumb {
     left: -60px;
     width: 420px;
     height: 777px;
+}
+.bilrigo .draft_toon {
+    top: 2640px;
+    left: 0;
+    width: 1400px;
+}
+.bilrigo .draft_toon > img {
+    width: 1018px;
+}
+.bilrigo .toon_hero_note {
+    top: 310px;
+    left: 1050px;
+    width: 350px;
+}
+.bilrigo .toon_direct_note {
+    top: 684px;
+    left: 50px;
+    width: 600px;
+}
+.bilrigo .draft_toon .draft_connectors {
+    width: 1400px;
+    height: 650px;
+}
+.bilrigo .draft_toon_mobile {
+    top: 3478px;
+    left: 658px;
+    width: 364px;
+}
+.bilrigo .draft_toon_mobile .draft_note {
+    right: 400px;
+    width: 600px;
+    text-align: right;
+}
+.bilrigo .toon_navigation_note { top: 70px; }
+.bilrigo .toon_full_note { top: 490px; }
+.bilrigo .draft_toon_mobile .draft_connectors {
+    top: 0;
+    left: -60px;
+    width: 420px;
+    height: 780px;
 }
 
 .partner .draft_02,
