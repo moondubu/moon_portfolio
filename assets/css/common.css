@@ -422,7 +422,7 @@ body::-webkit-scrollbar-thumb {
 .section_tit {
     font-size: 80px;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 1;
 }
 
@@ -743,11 +743,14 @@ body::-webkit-scrollbar-thumb {
 }
 .about_text_box p {
     font-family: var(--suit);
-    font-size: 15px;
-    font-weight: 300;
-    line-height: 1.6
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 2;
+    color: #9D9AA3;
 }
-
+.about_text_box p span {
+    color: var(--ci_yl);
+}
 /****** section_03 ******/
 
 .container .section_03 {
@@ -1647,8 +1650,13 @@ body::-webkit-scrollbar-thumb {
 .sub_overview .sub_cont p {
     color: #333;
 }
+.sub_overview .sub_cont p span.overview_ann {
+    font-size: 14px;
+    font-weight: 300;
+    color: #666;
+}
 .bilrigo .sub_overview .sub_cont p {
-    max-width: 740px;
+    max-width: 760px;
 }
 .thecheat .sub_overview .inner,
 .biz .sub_overview .inner {
